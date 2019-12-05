@@ -47,10 +47,10 @@ class SR_Player extends GDO
 	
 	# Timing
 	const FIGHT_INIT_BUSY = 15;
-	const GIVE_TIME = 45;
+	const GIVE_TIME = 25;
 // 	const UNEQUIP_TIME = 20;
-	const FORWARD_TIME = 35;
-	const BACKWARD_TIME = 45;
+	const FORWARD_TIME = 25;
+	const BACKWARD_TIME = 35;
 	
 	# WWW hack
 	const WWW_OUT = 0x00010;
@@ -86,20 +86,20 @@ class SR_Player extends GDO
 	 * Bonus values for races.
 	 */
 	public static $RACE = array(
-		'fairy' =>     array('body'=>0,'magic'=> 5,'strength'=>-2,'quickness'=>3,'wisdom'=>4,'intelligence'=>4,'charisma'=> 4,'attack'=>1,'luck'=>3),
-		'elve' =>      array('body'=>1,'magic'=> 4,'strength'=>-1,'quickness'=>3,'wisdom'=>2,'intelligence'=>3,'charisma'=> 2,'attack'=>2,'bows'=>1),
-		'halfelve' =>  array('body'=>1,'magic'=> 3,'strength'=> 0,'quickness'=>3,'wisdom'=>2,'intelligence'=>2,'charisma'=> 2,'attack'=>3,'bows'=>2),
-		'vampire' =>   array('body'=>0,'magic'=> 3,'strength'=> 0,'quickness'=>4,'wisdom'=>2,'intelligence'=>3,'charisma'=> 1,'attack'=>4),
-		'darkelve' =>  array('body'=>1,'magic'=> 2,'strength'=> 0,'quickness'=>3,'wisdom'=>2,'intelligence'=>2,'charisma'=> 2,'attack'=>5,'bows'=>2),
-		'woodelve' =>  array('body'=>1,'magic'=> 1,'strength'=> 0,'quickness'=>3,'wisdom'=>1,'intelligence'=>2,'charisma'=> 2,'attack'=>6,'bows'=>2),
-		'human' =>     array('body'=>2,'magic'=> 0,'strength'=> 0,'quickness'=>3,'wisdom'=>1,'intelligence'=>2,'charisma'=> 2,'attack'=>7),
-		'gnome' =>     array('body'=>2,'magic'=> 0,'strength'=> 0,'quickness'=>3,'wisdom'=>1,'intelligence'=>2,'charisma'=> 1,'attack'=>8,'luck'=>1),
-		'dwarf' =>     array('body'=>3,'magic'=> 0,'strength'=> 1,'quickness'=>2,'wisdom'=>1,'intelligence'=>2,'charisma'=> 1,'attack'=>9,'luck'=>1),
-		'halfork' =>   array('body'=>3,'magic'=>-1,'strength'=> 1,'quickness'=>2,'wisdom'=>1,'intelligence'=>2,'charisma'=> 1,'attack'=>10),
-		'halftroll' => array('body'=>3,'magic'=>-2,'strength'=> 2,'quickness'=>2,'wisdom'=>0,'intelligence'=>1,'charisma'=> 0,'attack'=>11),
-		'ork' =>       array('body'=>4,'magic'=>-3,'strength'=> 3,'quickness'=>1,'wisdom'=>1,'intelligence'=>1,'charisma'=> 0,'attack'=>12),
-		'troll' =>     array('body'=>4,'magic'=>-4,'strength'=> 4,'quickness'=>0,'wisdom'=>0,'intelligence'=>0,'charisma'=> 0,'attack'=>13,'essence'=>-0.2),
-		'gremlin' =>   array('body'=>4,'magic'=>-5,'strength'=> 3,'quickness'=>1,'wisdom'=>0,'intelligence'=>0,'charisma'=>-1,'attack'=>14,'reputation'=>2,'essence'=>-0.5),
+		'fairy' =>     array('body'=>0,'magic'=> 5,'strength'=>-2,'quickness'=>5,'wisdom'=>4,'intelligence'=>4,'charisma'=> 5,'attack'=>1,'luck'=>3),
+		'elve' =>      array('body'=>1,'magic'=> 4,'strength'=>-1,'quickness'=>4,'wisdom'=>3,'intelligence'=>3,'charisma'=> 3,'attack'=>2,'bows'=>1),
+		'halfelve' =>  array('body'=>1,'magic'=> 3,'strength'=> 2,'quickness'=>3,'wisdom'=>2,'intelligence'=>2,'charisma'=> 3,'attack'=>3,'bows'=>2),
+		'vampire' =>   array('body'=>1,'magic'=> 3,'strength'=> 2,'quickness'=>4,'wisdom'=>2,'intelligence'=>3,'charisma'=> 3,'attack'=>4),
+		'darkelve' =>  array('body'=>2,'magic'=> 2,'strength'=> 2,'quickness'=>4,'wisdom'=>2,'intelligence'=>2,'charisma'=> 3,'attack'=>5,'bows'=>2),
+		'woodelve' =>  array('body'=>3,'magic'=> 1,'strength'=> 2,'quickness'=>4,'wisdom'=>3,'intelligence'=>2,'charisma'=> 4,'attack'=>6,'bows'=>2),
+		'human' =>     array('body'=>3,'magic'=> 0,'strength'=> 3,'quickness'=>3,'wisdom'=>2,'intelligence'=>2,'charisma'=> 3,'attack'=>7),
+		'gnome' =>     array('body'=>3,'magic'=> 0,'strength'=> 3,'quickness'=>3,'wisdom'=>1,'intelligence'=>2,'charisma'=> 1,'attack'=>8,'luck'=>1),
+		'dwarf' =>     array('body'=>4,'magic'=> 0,'strength'=> 4,'quickness'=>2,'wisdom'=>1,'intelligence'=>2,'charisma'=> 1,'attack'=>9,'luck'=>1),
+		'halfork' =>   array('body'=>4,'magic'=>-1,'strength'=> 5,'quickness'=>2,'wisdom'=>1,'intelligence'=>2,'charisma'=> 1,'attack'=>10),
+		'halftroll' => array('body'=>5,'magic'=>-2,'strength'=> 6,'quickness'=>2,'wisdom'=>0,'intelligence'=>1,'charisma'=> 0,'attack'=>11),
+		'ork' =>       array('body'=>5,'magic'=>-3,'strength'=> 6,'quickness'=>1,'wisdom'=>1,'intelligence'=>1,'charisma'=> 0,'attack'=>12),
+		'troll' =>     array('body'=>7,'magic'=>-4,'strength'=> 7,'quickness'=>0,'wisdom'=>0,'intelligence'=>0,'charisma'=> 0,'attack'=>13,'essence'=>-0.2),
+		'gremlin' =>   array('body'=>6,'magic'=>-5,'strength'=> 3,'quickness'=>1,'wisdom'=>0,'intelligence'=>0,'charisma'=>-1,'attack'=>14,'reputation'=>2,'essence'=>-0.5),
 		#NPC
 		'animal' =>    array('body'=>0,'magic'=>0, 'strength'=> 0,'quickness'=>0,'wisdom'=>0,'intelligence'=>0,'charisma'=> 0,'attack'=>5),
 		'droid' =>     array('body'=>0,'magic'=>0, 'strength'=> 0,'quickness'=>0,'wisdom'=>0,'intelligence'=>0,'charisma'=>-3,'attack'=>10,'reputation'=>0, 'essence'=>0),
@@ -131,7 +131,7 @@ class SR_Player extends GDO
 	);
 	
 	public static $GENDER = array(
-		'male' => array('strength'=>1,'wisdom'=>1),
+		'male' => array('strength'=>1,'wisdom'=>2),
 		'female' => array('charisma'=>2,'intelligence'=>1),
 	);
 	
