@@ -1,7 +1,7 @@
 <?php
 final class Redmond_Lamer extends SR_NPC
 {
-	public function getNPCLevel() { return 0; }
+	public function getNPCLevel() { return 1; }
 	public function getNPCPlayerName() { return 'Lamer'; }
 	public function getNPCMeetPercent(SR_Party $party) { return 140.00; }
 	public function canNPCMeet(SR_Party $party) { return true; }
@@ -27,6 +27,7 @@ final class Redmond_Lamer extends SR_NPC
 			'nuyen' => rand(10, 20),
 			'base_hp' => rand(-8, -6),
 			'distance' => rand(0, 2),
+			'melee' => rand(0, 2),
 			'strength' => 1,
 			'quickness' => 1,
 		);
