@@ -8,7 +8,7 @@ final class Seattle_Citizen1 extends SR_HireNPC
 	public function getNPCEquipment()
 	{
 		return array(
-			'weapon' => 'LongSword',
+			'weapon' => 'Baseballbat',
 			'armor' => 'LeatherVest',
 			'legs' => 'Trousers',
 		);
