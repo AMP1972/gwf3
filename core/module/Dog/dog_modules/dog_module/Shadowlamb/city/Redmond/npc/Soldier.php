@@ -10,8 +10,8 @@ final class Redmond_Soldier extends SR_HireNPC
 	public function getNPCEquipment()
 	{
 		return array(
-			'weapon' => 'Knife',
-			'armor' => 'LeatherVest',
+			'weapon' => 'Stiletto',
+			'armor' => 'ChainVest',
 			'legs' => 'Trousers',
 		);
 	}
@@ -20,9 +20,10 @@ final class Redmond_Soldier extends SR_HireNPC
 		return array(
 			'race' => 'human',
 			'gender' => 'male',
-			'strength' => rand(2, 3),
-			'quickness' => rand(2, 3),
+			'strength' => rand(2, 5),
+			'quickness' => rand(2, 6),
 			'distance' => rand(0, 2),
+			'melee' => rand(1, 4),
 			'nuyen' => rand(80, 120),
 			'base_hp' => rand(12, 16),
 		);
