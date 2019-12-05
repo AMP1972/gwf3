@@ -9,7 +9,7 @@ final class Redmond_OrkLeader extends SR_NPC
 		return array(
 			'race' => 'ork',
 			'strength' => rand(5, 6),
-			'quickness' => rand(1, 2),
+			'quickness' => rand(3, 4),
 			'melee' => rand(2, 3),
 			'base_hp' => rand(20, 24),
 			'distance' => rand(2, 4),
@@ -19,7 +19,7 @@ final class Redmond_OrkLeader extends SR_NPC
 	public function getNPCEquipment()
 	{
 		return array(
-			'weapon' => array('ShortSword', 'LongSword'),
+			'weapon' => array('HaukAxe', 'LargeAxe'),
 			'armor' => 'LeatherVest',
 			'boots' => 'LeatherBoots',
 			'helmet' => 'LeatherCap',
