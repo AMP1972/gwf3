@@ -24,7 +24,7 @@ final class Redmond_Hotelier extends SR_RealNPC
 			$player->giveKnowledge('words', 'Hello', 'Renraku');
 // 			$this->reply('You were saying something about Renraku... Don`t ask me why ... But ... Take this... And maybe wear some clothes... :S');
 			$this->rply('intro3');
-			$items = array(SR_Item::createByName('FirstAid'), SR_Item::createByName('Clothes'), SR_Item::createByName('Trousers'), SR_Item::createByName('Shoes'));
+			$items = array(SR_Item::createByName('FirstAid'), SR_Item::createByName('LeatherVest'), SR_Item::createByName('Shorts'), SR_Item::createByName('Sneakers'));
 			$player->giveItems($items, $this->getName());
 			$quest->accept($player);
 			$player->help($this->langNPC('intro4'));
