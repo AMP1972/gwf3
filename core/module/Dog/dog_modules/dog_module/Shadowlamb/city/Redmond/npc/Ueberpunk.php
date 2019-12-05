@@ -10,21 +10,21 @@ final class Redmond_Ueberpunk extends SR_NPC
 	{
 		return array(
 			'weapon' => 'AresPredator',
-			'armor' => 'Clothes',
-			'legs' => 'Trousers',
+			'armor' => 'StuddedVest',
+			'legs' => 'Shorts',
 			'boots' => 'Sneakers',
 		);
 	}
 	public function getNPCInventory() { return array('FirstAid', 'Ammo_9mm'); }
 	public function getNPCModifiers() {
 		return array(
-			'nuyen' => rand(20, 30),
+			'nuyen' => rand(40, 80),
 			'base_hp' => rand(8, 12),
-			'strength' => rand(2, 3),
-			'quickness' => rand(2, 3),
+			'strength' => rand(2, 4),
+			'quickness' => rand(2, 5),
 			'distance' => rand(8, 10),
-			'firearms' => rand(1, 3),
-			'pistols' => rand(2, 3),
+			'firearms' => rand(1, 5),
+			'pistols' => rand(2, 5),
 		);
 	}
 	
