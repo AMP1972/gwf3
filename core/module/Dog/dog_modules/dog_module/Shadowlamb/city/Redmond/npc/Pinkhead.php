@@ -1,7 +1,7 @@
 <?php
 final class Redmond_Pinkhead extends SR_NPC
 {
-	public function getNPCLevel() { return 0; }
+	public function getNPCLevel() { return 1; }
 	public function getNPCPlayerName() { return 'Pinkhead'; }
 	public function getNPCMeetPercent(SR_Party $party) { return 90.00; }
 	public function canNPCMeet(SR_Party $party) { return true; }
@@ -9,7 +9,7 @@ final class Redmond_Pinkhead extends SR_NPC
 	public function getNPCEquipment()
 	{
 		return array(
-			'armor' => 'Clothes',
+			'armor' => 'LeatherVest',
 		);
 	}
 	public function getNPCInventory() { return array('LargeBeer'); }
@@ -21,7 +21,7 @@ final class Redmond_Pinkhead extends SR_NPC
 			'distance' => rand(0, 4),
 			'strength' => rand(0, 1),
 			'quickness' => rand(0, 1),
-			'melee' => rand(0, 1),
+			'melee' => rand(0, 3),
 		);
 	}
 	public function getNPCModifiersB()
