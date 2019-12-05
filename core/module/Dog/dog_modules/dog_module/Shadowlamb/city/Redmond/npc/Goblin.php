@@ -11,9 +11,10 @@ final class Redmond_Goblin extends SR_NPC
 		return array(
 			'race' => 'gnome',
 			'strength' => rand(0, 1),
-			'quickness' => rand(2, 3),
+			'quickness' => rand(2, 5),
 			'base_hp' => rand(1, 4),
 			'distance' => rand(1, 3),
+			'melee' => rand(1, 4),
 			'nuyen' => rand(10, 40),
 		);
 	}
@@ -21,9 +22,9 @@ final class Redmond_Goblin extends SR_NPC
 	public function getNPCEquipment()
 	{
 		return array(
-			'weapon' => array('Knife','BaseballBat'),
+			'weapon' => array('IronPipe','Stiletto'),
 			'armor' => 'LeatherVest',
-			'boots' => 'Sandals',
+			'boots' => 'Boots',
 			'helmet' => 'Cap',
 			'legs' => 'Shorts',
 		);
