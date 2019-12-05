@@ -21,7 +21,7 @@ class Item_Bike extends Item_Backpack
 	{
 		return array(
 			'tuneup' => '2.00' + $this->getBikeTuneup($player),
-			'transport' => '2.50',
+			'transport' => '4.50',
 		);
 	}
 }
