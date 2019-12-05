@@ -8,8 +8,8 @@ final class Redmond_Citizen extends SR_HireNPC
 	public function getNPCEquipment()
 	{
 		return array(
-			'weapon' => 'Knife',
-			'armor' => 'Clothes',
+			'weapon' => 'BrassKnuckles',
+			'armor' => 'LeatherVest',
 			'legs' => 'Trousers',
 		);
 	}
@@ -18,11 +18,11 @@ final class Redmond_Citizen extends SR_HireNPC
 		return array(
 			'race' => 'human',
 			'gender' => 'male',
-			'strength' => rand(2, 3),
-			'quickness' => rand(1, 3),
+			'strength' => rand(2, 5),
+			'quickness' => rand(3, 5),
 			'distance' => rand(0, 2),
 			'nuyen' => rand(10, 20),
-			'sharpshooter' => rand(3,4),
+			'melee' => rand(1, 2),
 			'base_hp' => rand(6, 12),
 		);
 	}
