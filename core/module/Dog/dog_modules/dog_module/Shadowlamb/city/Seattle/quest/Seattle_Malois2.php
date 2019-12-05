@@ -27,7 +27,7 @@ final class Quest_Seattle_Malois2 extends SR_Quest
 // 			$player->message(sprintf('You hand Malois %s ...', $this->displayNuyen()));
 			$player->giveNuyen(-$ny);
 			$npc->reply($this->lang('thx1'));
-// 			$npc->reply('Thank you very much my friend. I think I can find out more now.');
+// 			$npc->reply('Thank you very much my friend. I think, I can find out more now.');
 			$player->giveXP(self::REWARD_XP);
 			$this->onSolve($player);
 			return true;
