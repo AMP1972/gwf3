@@ -9,7 +9,7 @@ final class Seattle_AMagician extends SR_NPC
 	{
 		return array(
 			'weapon' => 'ElvenStaff',
-			'armor' => 'FineRobe',
+			'armor' => 'KevlarVest',
 			'helmet' => 'ElvenCap',
 			'legs' => 'ElvenTrousers',
 		);
@@ -23,8 +23,8 @@ final class Seattle_AMagician extends SR_NPC
 			'strength' => 2,
 			'quickness' => 5,
 			'magic'  => 8,
-			'intelligence' => 8,
-			'wisdom' => 4,
+			'intelligence' => 6,
+			'wisdom' => 6,
 			'distance' => 12,
 			'base_hp' => 16,
 			'nuyen' => 90,
