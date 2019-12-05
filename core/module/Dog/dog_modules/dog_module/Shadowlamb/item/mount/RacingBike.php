@@ -2,8 +2,8 @@
 require_once 'Bike.php';
 class Item_RacingBike extends Item_Bike
 {
-	public function getItemDescription() { return 'A cheap but solid bicycle.'; }
-	public function getItemPrice() { return 1295.00; }
+	public function getItemDescription() { return 'A cheap, but solid, bicycle.'; }
+	public function getItemPrice() { return 750.00; }
 	
 // 	public function getMountWeight() { return 1500; }
 	public function getMountPassengers() { return 1; }
@@ -15,7 +15,7 @@ class Item_RacingBike extends Item_Bike
 		return array(
 			'lock' => 1,
 			'tuneup' => '2.50' + $this->getBikeTuneup($player),
-			'transport' => '1.50',
+			'transport' => '3.50',
 		);
 	}
 }
