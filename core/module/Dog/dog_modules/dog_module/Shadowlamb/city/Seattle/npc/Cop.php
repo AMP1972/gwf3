@@ -23,12 +23,13 @@ final class Seattle_Cop extends SR_TalkingNPC
 		return array(
 			'race' => 'human',
 			'gender' => 'male',
-			'strength' => rand(1, 2),
+			'strength' => rand(1, 4),
 			'melee' => rand(5, 6),
 			'pistols' => rand(5, 6),
 			'firearms' => rand(6, 7),
-			'quickness' => rand(2, 4),
-			'distance' => rand(0, 2),
+			'pistols' => rand(1, 3),
+			'quickness' => rand(2, 6),
+			'distance' => rand(2, 20),
 			'nuyen' => rand(40, 60),
 			'base_hp' => rand(8, 16),
 		);
