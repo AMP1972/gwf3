@@ -7,8 +7,8 @@ final class Seattle_Shaolin extends SR_NPC
 	public function getNPCEquipment()
 	{
 		return array(
-			'weapon' => 'SteelNunchaku',
-			'armor' => 'FineRobe',
+			'weapon' => 'HanBo',
+			'armor' => 'StuddedVest',
 			'legs' => 'FineLegs',
 			'boots' => 'LeatherBoots',
 		);
@@ -20,10 +20,10 @@ final class Seattle_Shaolin extends SR_NPC
 			'race' => 'halfelve',
 			'gender' => 'male',
 			'strength' => rand(1, 2),
-			'quickness' => rand(1, 3),
+			'quickness' => rand(3, 6),
 			'distance' => rand(2, 8),
-			'melee' => rand(1, 3),
-			'ninja' => rand(1, 3),
+			'melee' => rand(1, 5),
+			'ninja' => rand(2, 5),
 			'sharpshooter' => rand(1, 2),
 			'nuyen' => rand(30, 70),
 			'base_hp' => rand(3, 8),
