@@ -15,7 +15,7 @@ class Item_Moped extends Item_RacingBike
 		return array(
 			'lock' => 1,
 			'tuneup' => '3.00',
-			'transport' => '4.00',
+			'transport' => '8.00',
 		);
 	}
 }
