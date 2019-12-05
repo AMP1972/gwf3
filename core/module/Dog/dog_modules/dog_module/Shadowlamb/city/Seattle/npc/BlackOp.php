@@ -21,15 +21,15 @@ final class Seattle_BlackOp extends SR_NPC
 			'shield' => 'KevlarShield',
 		);
 	}
-	public function getNPCInventory() { return array('Stimpatch','Ammo_9mm','Ammo_9mm','Ammo_9mm','Ammo_9mm'); }
+	public function getNPCInventory() { return array('Stimpatch','IronPipe', 'Ammo_9mm','Ammo_9mm','Ammo_9mm','Ammo_9mm'); }
 	public function getNPCModifiers() {
 		return array(
 			'race' => 'human',
 			'gender' => 'male',
-			'strength' => rand(2, 3),
-			'quickness' => rand(3, 4),
+			'strength' => rand(2, 5),
+			'quickness' => rand(3, 6),
 			'distance' => rand(8, 12),
-			'melee' => rand(1, 2),
+			'melee' => rand(1, 4),
 			'firearms' => rand(3, 4),
 			'pistols' => rand(4, 4),
 			'sharpshooter' => rand(5, 6),
