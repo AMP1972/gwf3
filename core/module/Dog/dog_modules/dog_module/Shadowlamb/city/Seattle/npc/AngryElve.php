@@ -7,23 +7,23 @@ final class Seattle_AngryElve extends SR_NPC
 	public function getNPCEquipment()
 	{
 		return array(
-			'weapon' => 'ElvenBow',
+			'weapon' => array('ElvenBow', 'ElvenStaff', 'Fists')
 			'armor' => 'ElvenVest',
 			'legs' => 'ElvenShorts',
 			'boots' => 'ElvenBoots',
 		);
 	}
-	public function getNPCInventory() { return array('Ammo_Arrow', 'Ammo_Arrow'); }
+	public function getNPCInventory('ElvenBow', 'ElvenStaff) { return array('Ammo_Arrow', 'Ammo_Arrow'); }
 	public function getNPCModifiers() {
 		return array(
 			'race' => 'woodelve',
-			'gender' => 'male',
+			'gender' => rand('male', 'female')
 			'strength' => rand(1, 3),
 			'quickness' => rand(3, 5),
 			'distance' => rand(8, 14),
-			'bows' => rand(1, 3),
+			'bows' => rand(2, 5),
 			'firearms' => rand(1, 3),
-			'sharpshooter' => rand(1, 2),
+			'sharpshooter' => rand(1, 3),
 			'nuyen' => rand(40, 70),
 			'base_hp' => rand(4, 9),
 		);
@@ -42,4 +42,3 @@ final class Seattle_AngryElve extends SR_NPC
 	}
 	
 }
-?>
