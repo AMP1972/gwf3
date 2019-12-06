@@ -8,8 +8,8 @@ final class Delaware_Citizen extends SR_HireNPC
 	public function getNPCEquipment()
 	{
 		return array(
-			'weapon' => array('LongSword','Knife','BroadSword'),
-			'armor' => array('LeatherVest','StuddedVest'),
+			'weapon' => array('Stiletto','Knife','ShortSword'),
+			'armor' => array('StuddedVest','ChainVest'),
 			'legs' => array('Trousers', 'StuddedLegs'),
 			'helmet' => array('Cap'),
 			'boots' => array('Boots','ArmyBoots'),
