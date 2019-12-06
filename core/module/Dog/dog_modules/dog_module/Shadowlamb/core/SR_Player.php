@@ -5,15 +5,15 @@ class SR_Player extends GDO
 	const MAX_WEIGHT_MALUS = 0.25; # 25%
 		
 	const BASE_HP = 4;
-	const BASE_HP_NPC = 1;
+	const BASE_HP_NPC = 2;
 	const BASE_MP = 0;
-	const HP_PER_BODY = 3.0;
+	const HP_PER_BODY = 2.0;
 	const MP_PER_MAGIC = 5;
 	const MP_PER_CASTING = 5;
 	const HP_REFRESH_MULTI = 0.03;
 	const MP_REFRESH_MULTI = 0.02;
-	const HP_REFRESH_TIMER = 300;
-	const MP_REFRESH_TIMER = 240;
+	const HP_REFRESH_TIMER = 180;
+	const MP_REFRESH_TIMER = 60;
 	
 	const XP_PER_KARMA = 4;
 	const XP_PER_KARMA_RAISE = 0.5;
@@ -46,11 +46,11 @@ class SR_Player extends GDO
 	const NO_AUTO_LOOK = 0x1000000;
 	
 	# Timing
-	const FIGHT_INIT_BUSY = 15;
-	const GIVE_TIME = 45;
+	const FIGHT_INIT_BUSY = 10;
+	const GIVE_TIME = 25;
 // 	const UNEQUIP_TIME = 20;
-	const FORWARD_TIME = 35;
-	const BACKWARD_TIME = 45;
+	const FORWARD_TIME = 25;
+	const BACKWARD_TIME = 35;
 	
 	# WWW hack
 	const WWW_OUT = 0x00010;
@@ -101,8 +101,8 @@ class SR_Player extends GDO
 		'troll' =>     array('body'=>4,'magic'=>-4,'strength'=> 4,'quickness'=>0,'wisdom'=>0,'intelligence'=>0,'charisma'=> 0,'attack'=>13,'essence'=>-0.2),
 		'gremlin' =>   array('body'=>4,'magic'=>-5,'strength'=> 3,'quickness'=>1,'wisdom'=>0,'intelligence'=>0,'charisma'=>-1,'attack'=>14,'reputation'=>2,'essence'=>-0.5),
 		#NPC
-		'animal' =>    array('body'=>0,'magic'=>0, 'strength'=> 0,'quickness'=>0,'wisdom'=>0,'intelligence'=>0,'charisma'=> 0,'attack'=>5),
-		'droid' =>     array('body'=>0,'magic'=>0, 'strength'=> 0,'quickness'=>0,'wisdom'=>0,'intelligence'=>0,'charisma'=>-3,'attack'=>10,'reputation'=>0, 'essence'=>0),
+		'animal' =>    array('body'=>1,'magic'=>0, 'strength'=> 0,'quickness'=>2,'wisdom'=>1,'intelligence'=>0,'charisma'=> 0,'attack'=>5),
+		'droid' =>     array('body'=>1,'magic'=>0, 'strength'=> 1,'quickness'=>1,'wisdom'=>0,'intelligence'=>0,'charisma'=>-3,'attack'=>10,'reputation'=>0, 'essence'=>0),
 		'dragon' =>    array('body'=>8,'magic'=>8, 'strength'=> 8,'quickness'=>0,'wisdom'=>8,'intelligence'=>8,'charisma'=> 0,'attack'=>15,'reputation'=>12,'essence'=>2),
 	);
 	
