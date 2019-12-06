@@ -2,10 +2,10 @@
 final class Shadowfunc
 {
 	/** Move that to a file! **/
-	const BUY_PERCENT_CHARISMA = 0.5;
-	const BUY_PERCENT_NEGOTIATION = 1.0;
-	const SELL_PERCENT_CHARISMA = 0.6;
-	const SELL_PERCENT_NEGOTIATION = 1.0;
+	const BUY_PERCENT_CHARISMA = 0.75;
+	const BUY_PERCENT_NEGOTIATION = 1.5;
+	const SELL_PERCENT_CHARISMA = 0.65;
+	const SELL_PERCENT_NEGOTIATION = 1.1;
 	
 	/**
 	 * Convert a long human{} username to short human name. (strip {server})
@@ -1036,7 +1036,7 @@ final class Shadowfunc
 			$chance = self::randLootLuckChance($player, $item, $level, $chance);
 			
 			# Crunch bit
-			$chance /= 10;
+			$chance /= 25;
 			
 			# dropchance = base chance * funky stuff
 			$dc = round($item->getItemDropChance()*$chance);
