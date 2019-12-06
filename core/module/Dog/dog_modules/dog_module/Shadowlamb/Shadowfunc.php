@@ -2,10 +2,10 @@
 final class Shadowfunc
 {
 	/** Move that to a file! **/
-	const BUY_PERCENT_CHARISMA = 0.5;
-	const BUY_PERCENT_NEGOTIATION = 1.0;
-	const SELL_PERCENT_CHARISMA = 0.6;
-	const SELL_PERCENT_NEGOTIATION = 1.0;
+	const BUY_PERCENT_CHARISMA = 0.75;
+	const BUY_PERCENT_NEGOTIATION = 1.10;
+	const SELL_PERCENT_CHARISMA = 0.75;
+	const SELL_PERCENT_NEGOTIATION = 1.5;
 	
 	/**
 	 * Convert a long human{} username to short human name. (strip {server})
