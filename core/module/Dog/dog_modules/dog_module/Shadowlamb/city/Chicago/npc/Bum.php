@@ -9,22 +9,24 @@ final class Chicago_Bum extends SR_HireNPC
 	{
 		return array(
 			'weapon' => 'Knife',
-			'armor' => 'Clothes',
-			'legs' => 'Trousers',
-			'boots' => 'Shoes',
+			'armor' => 'Rags',
+			'legs' => 'Shorts',
+			'boots' => 'ArmyBoots',
 		);
 	}
 	public function getNPCInventory() { return array(); }
 	public function getNPCModifiers() {
 		return array(
 			'race' => 'human',
-			'gender' => 'male',
+			'gender' => 'male','female'
 			'strength' => rand(1, 3),
 			'quickness' => rand(2, 3),
 			'distance' => rand(8, 12),
 			'nuyen' => rand(5, 10),
-			'sharpshooter' => rand(1,2),
-			'base_hp' => rand(12, 18),
+			'melee' => rand(1,5),
+			'ninja' => rand(0, 2)
+			'thief' => rand(0, 2)
+			'base_hp' => rand(9, 15),
 		);
 	}
 	
