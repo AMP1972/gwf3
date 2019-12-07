@@ -49,4 +49,3 @@ final class Seattle_Shamane extends SR_TalkingNPC
 // 		$this->reply($msg);
 	}
 }
-?>
