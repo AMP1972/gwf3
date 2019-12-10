@@ -1,6 +1,6 @@
 <?php
 /**
- * The Seattle Arena. You can PvP here or fight a few NPC.
+ * The Seattle Arena. You can PvP here, or fight a few NPC.
  * @author gizmore
  */
 final class Seattle_Arena extends SR_Location
@@ -24,7 +24,7 @@ final class Seattle_Arena extends SR_Location
 		if ($player->isInParty())
 		{
 			$player->msg('1099');
-// 			$player->message("You can't fight here when you are in a party. Use #part to leave your party.");
+// 			$player->message("You can't fight here, when you are in a party. Use #part to leave your party.");
 			return false;
 		}
 		
@@ -42,6 +42,7 @@ final class Seattle_Arena extends SR_Location
 			array("Seattle_AToughTroll", $this->lang($player, 'e3')),
 			array("Seattle_AMagician", $this->lang($player, 'e4')),
 			array("Seattle_AElite", $this->lang($player, 'e5')),
+			array("Seattle_AGoth", $this->lang($player, 'e6')),
 		);
 		
 		# No more fights:
